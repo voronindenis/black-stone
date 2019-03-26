@@ -12,3 +12,7 @@ declare type GetState = () => ApplicationStateTypes;
 declare module 'history/createBrowserHistory' {
   declare module.exports: any;
 }
+
+declare module 'react-iframe' {
+  declare module.exports: any;
+}
