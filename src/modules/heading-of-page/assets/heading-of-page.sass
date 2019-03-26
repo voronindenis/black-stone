@@ -1,0 +1,45 @@
+@import '~@/assets/constants.sass'
+
+.heading-of-page
+	padding-top: 61px
+	padding-bottom: 58px
+
+	&__img-substrate-level-one
+		width: 526px
+		height: 526px
+		border: solid 1px #4f4225
+		border-radius: 50%
+		@extend %flex__center_center
+
+	&__img-substrate-level-two
+		width: 442px
+		height: 442px
+		background-image: linear-gradient(221deg, #fbc839, #f2a21a)
+		border-radius: 50%
+		@extend %flex__center_center
+
+	&__img
+		width: 495px
+
+	&__heading-container
+		padding-left: 10%
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+	&__heading
+		margin-bottom: 15px
+
+	&__description
+		margin-bottom: 37px
+
+	&__heading-text
+		color: $whiteColor
+		text-transform: uppercase
+
+	&__description-text
+		color: $accentColor
+		line-height: 24px
+		font:
+			size: 24px
+			weight: 500

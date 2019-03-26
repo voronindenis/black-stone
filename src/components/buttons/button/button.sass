@@ -1,0 +1,49 @@
+@import '~@/assets/constants.sass'
+
+.ui.button.custom-button
+  height: 63px
+  width: 239px
+  font-weight: normal
+  border-radius: 0
+
+  &--primary
+    background:
+      color: $accentColor
+    color: $blackColor
+
+  &--primary:hover, &--primary:active, &--primary:focus
+    transition: all 0.04s ease-out 0.02s
+    color: $blackColor
+    background:
+      color: $accentColor
+
+  &--secondary
+    border: solid 1px #4d4d53
+    background:
+      color: transparent
+    color: $accentColor
+
+  &--secondary:hover, &--secondary:active, &--secondary:focus
+    transition: all 0.04s ease-out 0.02s
+    border: solid 1px #979797
+    color: $accentColor
+    background:
+      color: transparent
+
+  &--default
+    color: $blackColor
+    border: solid 1px $greyColor
+    background:
+      color: $whiteColor
+
+  &--default:hover, &--default:active, &--default:focus
+    transition: all 0.04s ease-out 0.02s
+    border: solid 1px $accentColor
+    color: $blackColor
+    background:
+      color: $whiteColor
+
+.custom-button__icon
+  padding-left: 30px
+  top: -5px
+  position: relative

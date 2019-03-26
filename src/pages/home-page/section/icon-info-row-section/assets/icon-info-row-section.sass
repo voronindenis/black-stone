@@ -1,0 +1,24 @@
+@import "~@/assets/constants.sass"
+
+.icon-info-row-section
+  position: relative
+  z-index: 1
+  top: 85px
+
+  &__content
+    @extend %flex__space_between
+    align-items: center
+    box-shadow: 0 17px 17px 0 rgba(205, 205, 205, 0.23)
+    background-color: #ffffff
+    min-height: 168px
+
+  &__icon_info_block_wrapper
+    padding: 0 30px 0 30px
+
+  &__seperator
+    width: 0
+    height: 102px
+    border: solid 1px #f5f5f5
+
+  &__seperator:last-child
+    display: none

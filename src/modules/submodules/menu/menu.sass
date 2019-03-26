@@ -1,0 +1,21 @@
+@import '~@/assets/constants.sass'
+
+.header_menu
+	height: 61px
+	background-color: rgba(255, 255, 255, 0.06)
+
+	&__row
+		line-height: 61px
+
+	&__left-content, &__center-content, &__right-content
+		text-align: center
+
+	&__center-content
+		@extend %flex__space_between
+
+	&__button
+		position: relative
+		top: -1px
+
+	&__link
+		@extend %menu_link

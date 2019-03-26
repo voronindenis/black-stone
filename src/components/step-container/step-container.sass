@@ -1,0 +1,27 @@
+@import '~@/assets/constants.sass'
+
+.step-container
+  padding-top: 60px
+
+  &__step_number_container
+    @extend %flex__end
+
+  &__step_number
+    margin-top: 10px !important
+    color: $accentColor
+    font:
+      size: 60px
+      weight: bold
+
+  &__step_title_container
+    @extend %flex__start_end
+
+  &__step_title
+    color: $blackColor
+    font:
+      size: 60px
+      weight: bold
+
+  &__step_content
+    @extend %flex__center_center
+    padding: 40px 0 40px 0

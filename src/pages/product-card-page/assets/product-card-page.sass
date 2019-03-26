@@ -1,0 +1,64 @@
+@import "~@/assets/constants.sass"
+
+.product-card-page-content
+  padding-top: 90px
+  background: linear-gradient(180deg, $mainBgColor 75%, $whiteColor 75%)
+
+  &__row:first-child
+    border-top: solid 14px $accentColor
+    background:
+      color: $whiteColor
+    padding-top: 60px
+
+  &__photos
+    display: flex
+    flex-flow: row wrap
+
+  &__photo_miniature_container
+    width: 165px
+    height: 115px
+    margin-bottom: 15px
+    overflow: hidden
+
+  &__photo_miniature
+    width: 165px
+
+  &__photo_view_block
+    height: 505px
+    overflow: hidden
+
+  &__photo
+    width: 170%
+    margin-left: -35%
+
+  &__title
+    font:
+      size: 2rem !important
+      weight: normal
+    color: $blackColor
+    text-transform: uppercase
+
+  &__price
+    font:
+      size: 2.5rem
+    color: $accentColor
+    margin: 35px 0
+
+  &__description_text
+    margin-bottom: 35px
+
+  &__row:nth-child(2) > .catalog-slider
+    background: transparent
+
+  &__row:nth-child(2) .catalog-slider__left_arrow
+
+    &:before, &:after
+      border-color: $accentColor
+
+  &__row:nth-child(2) .catalog-slider__title
+      color: $accentColor
+
+  &__row:nth-child(2) .catalog-slider__right_arrow
+
+    &:before, &:after
+      border-color: $accentColor

@@ -1,0 +1,51 @@
+@import '~@/assets/constants'
+
+.stages-section
+  height: 530px
+  background-color: $accentColor
+
+  &__title
+    padding: 70px 0 70px 0
+    color: $blackColor
+    text:
+      align: center
+      transform: uppercase
+
+  &__stages
+    @extend %flex__center_center
+
+  &__stage
+    @extend %flex__column_center_center
+
+  &__icon-wrapper
+    @extend %flex__center_center
+    width: 100px
+    height: 100px
+    border-radius: 50%
+    background-color: $lessAccentColor
+
+  &__icon
+    width: 70px
+    height: 70px
+    background:
+      size: cover
+
+  &__text_container
+    text-align: center
+    padding: 10px 15% 10px 15%
+
+  &__seperator
+    @extend %flex__center
+    width: 30px
+
+    &::after
+      content: ''
+      display: block
+      width: 30px
+      height: 30px
+      border-bottom: solid 1px $blackColor
+      border-right: solid 1px $blackColor
+      transform: rotate(-45deg)
+
+  &__seperator:last-child
+    display: none

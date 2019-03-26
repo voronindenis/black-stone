@@ -1,0 +1,43 @@
+@import '~@/assets/constants.sass'
+
+.preview-product-card
+	display: block
+	min-width: 29%
+	max-width: 29%
+	box-shadow: -4px 23px 18px 0 rgba(0, 0, 0, 0.04)
+	background-color: $whiteColor
+	margin: 20px 2% 20px 2%
+
+	&:after
+		@extend %after_content_for_preview_blocks
+		bottom: 45px
+		color: $accentColor
+		border: solid 1px $accentColor
+		transition: all 0.2s ease-out 0.1s
+
+	&:hover, &:active, &:focus
+			transition: all 0.2s ease-out 0.1s
+
+			&:after
+				transition: all 0.2s ease-out 0.1s
+				transform: scale(1.5)
+
+	&__image
+		width: 100%
+		height: 200px
+		background:
+			size: cover
+			repeat: no-repeat
+
+	&__title
+		padding: 20px 0 15px 30px
+		text-transform: uppercase
+		font:
+			size: 19px !important
+			weight: bold
+
+	&__price
+		padding: 0 0 0 30px
+		color: $accentColor
+		font:
+			size: 30px

@@ -1,0 +1,29 @@
+@import "~@/assets/constants.sass"
+
+.ui.button.tab-button
+  @extend %flex__center_center
+  height: 80px
+  color: $whiteColor
+  font-weight: normal
+  border: none
+  border-radius: unset
+  background:
+    color: transparent
+
+  &:hover, &:visited, &:active, &:focus
+    background:
+      color: transparent
+    color: $whiteColor
+
+  &--active
+    transition: all 0.4ms ease-out 0.2ms
+    color: $blackColor
+    background:
+      color: $whiteColor
+
+    &:hover, &:visited, &:active, &:focus
+      color: $blackColor
+      background:
+        color: $whiteColor
+
+

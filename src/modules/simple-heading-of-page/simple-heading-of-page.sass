@@ -1,0 +1,34 @@
+@import "~@/assets/constants.sass"
+
+.simple-heading
+  display: flex
+
+  &__title
+    text-transform: uppercase
+    padding-left: 90px
+
+  &__description
+    color: $whiteColor
+    padding-right: 45px
+
+  &__icon_info_blocks
+    @extend %flex__column_space_between
+    padding-left: 90px
+    margin: 20px 0 40px 0
+    height: 170px
+    width: 70%
+
+    & > .icon-info-block
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+
+      & > .icon-info-block__icon
+        width: 30px
+        height: 30px
+
+      & > .icon-info-block__info
+        @extend %flex__start_center
+
+        & > .icon-info-block__sub-text
+          color: $whiteColor

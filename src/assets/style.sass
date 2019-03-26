@@ -1,0 +1,138 @@
+/* global styles */
+@import url('./media.css')
+@import url('./fonts.css')
+@import './constants.sass'
+@import './loader.sass'
+@import './input-range.sass'
+
+body
+  background:
+    color: $whiteColor !important
+  font:
+    family: 'GothamPro', sans-serif !important
+    size: 14px
+    weight: normal
+    color: $blackColor
+
+
+a
+  color: #fff
+  text-decoration: none
+  text-transform: none
+
+  &:hover, &:active
+    color: $accentColor !important
+    text-decoration: none
+
+h1
+  color: $accentColor
+  font-size: 3rem !important
+  font-family: 'GothamPro' !important
+  font-weight: bold !important
+
+h2
+  color: $blackColor
+  font-size: 2.5rem !important
+  font-family: 'GothamPro' !important
+
+h3
+  color: $blackColor
+  font-size: 2rem !important
+  font-family: 'GothamPro' !important
+
+h4
+  color: $blackColor
+  font-weight: normal !important
+  font-size: 1.4rem !important
+  font-family: 'GothamPro' !important
+
+input
+  border: none
+
+// %flex-row-center
+// 	display: flex
+// 	justify-content: center
+
+// %flex-column-center
+// 	display: flex
+// 	flex-direction: column
+// 	align-items: center
+
+// .someConentWrap
+// 	text-align: center
+// 	margin-top: 20%
+
+// .semanticFormWrap
+// 	@extend %flex-row-center
+// 	margin-top: 5%
+
+// .modalWindow
+// 	width: 760px
+
+// .modalWindowForm
+// 	width: 300px
+
+// /* global styles end*/
+
+// /* header styles */
+
+// .headerContainer
+// 	background-color: #ebf2f7
+// 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+// 	.row
+// 		align-items: center
+
+// 	.logoContainer
+// 		@extend %flex-row-center
+// 		height: 90px
+// 		background:
+// 			image: url(../images/logo.png)
+// 			size: contain
+// 			repeat: no-repeat
+// 			position: center center
+
+// 	.linkContainer
+// 		@extend %flex-row-center
+
+// 	.titleContainer
+// 		@extend %flex-row-center
+
+// 		h1
+// 			text-align: center
+
+// /* header styles end*/
+
+// /* doEntry styles */
+
+// .selectSpeciality
+// 	@extend %flex-row-center
+// 	margin-top: 15%
+
+// 	&Form
+// 		@extend %flex-column-center
+// 		width: 100%
+
+// .button-enter
+//   opacity: 0.01
+//   transform: scale(0.9) translateY(50%)
+
+// .button-enter.button-enter-active
+//   opacity: 1
+//   transform: scale(1) translateY(0%)
+//   transition: all 500ms ease-out
+
+// .button-exit
+//   opacity: 1
+//   transform: scale(1) translateY(0%)
+
+// .button-exit.button-exit-active
+//   opacity: 0.01
+//   transform: scale(0.9) translateY(50%)
+//   transition: all 500ms ease-out
+
+// .specilistsContainer
+// 	display: flex
+// 	justify-content: space-around
+// 	flex-wrap: wrap
+

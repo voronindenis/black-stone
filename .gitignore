@@ -1,0 +1,6 @@
+# dependences
+/node_modules
+/.idea
+
+# production
+/public

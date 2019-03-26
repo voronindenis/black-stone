@@ -1,0 +1,45 @@
+@import '~@/assets/constants.sass'
+
+.calculator-page
+
+  &__countertop_sizes_form_section_container_wrapper
+    flex-flow: row wrap
+    width: 100%
+
+  &__countertop_sizes_form_content
+    @extend %flex__column_center_center
+
+  &__line_countertop_type_image
+    height: 380px
+    background:
+      image: url("./countertop-types-image/line-countertop.jpg")
+      size: contain
+      repeat: no-repeat
+      position: center center
+
+  &__g_countertop_type_image
+    height: 380px
+    background:
+      image: url("./countertop-types-image/g-countertop.jpg")
+      size: contain
+      repeat: no-repeat
+      position: center center
+
+  &__p_countertop_type_image
+    width: 660px
+    height: 380px
+    background:
+      image: url("./countertop-types-image/p-counertop.jpg")
+      size: contain
+      repeat: no-repeat
+      position: center center
+
+  &__bowls_container
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    width: 100%
+
+  &__bowls_title
+    width: 100%
+    margin: 20px 0 20px 0 !important

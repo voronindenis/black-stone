@@ -1,0 +1,51 @@
+@import "~@/assets/constants.sass"
+
+.textures-page-content
+  background-color: $mainBgColor
+
+  &__row
+    padding: 90px 0
+
+  &__manufacturer_container
+    padding:
+      top: 60px
+      bottom: 60px
+
+  &__manufacturer
+    background-color: $whiteColor
+    border-bottom: 1px solid $greyColorForInput
+
+  &__manufacturer_title
+    text-transform: uppercase
+    width: 45%
+    padding-bottom: 15px
+    margin-left: 90px
+
+  &__manufacturer_image
+    width: 45%
+    padding: 30px 0
+    margin-left: 90px
+    border-top: 1px solid $greyColorForInput
+
+  &__textures
+    background-color: $accentColor
+    height: 0
+    overflow: hidden
+    transition: all 0.4s ease-out 0.2s
+
+    &--open
+      height: 400px
+      transition: all 0.4s ease-out 0.2s
+
+    &_row
+      border-bottom: 1px solid $greyColorForInput
+
+  &__texture_subspecies_container
+    @extend %flex__space_around
+
+  &__texture_subspecies_button
+    cursor: pointer
+    padding: 40px 0
+
+    &:hover
+      color: $blackColor !important

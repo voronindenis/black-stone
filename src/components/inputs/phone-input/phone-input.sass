@@ -1,0 +1,17 @@
+@import "~@/assets/constants.sass"
+
+.phone-input
+  @extend %flex__start_center
+  border: solid 1px $greyColorForInput
+  height: 63px
+
+  &__icon
+    @extend %flex__center_center
+    width: 20%
+    border-right: solid 1px $greyColorForInput
+
+.ui.input.phone-input__input > .phone-input__masked_input
+  border: none
+
+  &:focus
+    border: none

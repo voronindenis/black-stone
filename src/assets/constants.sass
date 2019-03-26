@@ -1,0 +1,90 @@
+//colors
+
+$blackColor: #000
+$whiteColor: #fff
+$accentColor: #fcc42b
+$lessAccentColor: #ffc62a
+$greyColor: #a7a7a7
+$greyColorForInput: rgba(34,36,38,.15)
+$greyColorForStripedTable: rgba(0,0,50,.02)
+$moreGreyColor: #979797
+$mainBgColor: #171723
+
+// selectors
+
+%flex__start_end
+	display: flex
+	align-items: flex-end
+
+%flex__end
+	display: flex
+	justify-content: flex-end
+
+%flex__start_center
+	display: flex
+	align-items: center
+
+%flex__space_between
+	display: flex
+	justify-content: space-between
+
+%flex__space_around
+	display: flex
+	justify-content: space-around
+
+%flex__center
+	display: flex
+	justify-content: center
+
+%flex__center_center
+	display: flex
+	justify-content: center
+	align-items: center
+
+%flex__center_end
+	display: flex
+	justify-content: center
+	align-items: flex-end
+
+%flex__end_center
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+%flex__column_center
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+%flex__column_center_center
+	@extend %flex__column_center
+	align-items: center
+
+%flex__column_center_start
+	@extend %flex__column_center
+	align-items: flex-start
+
+%flex__column_start
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+
+%flex__column_space_between
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+%menu_link
+	color: $whiteColor
+	text-transform: uppercase
+
+%after_content_for_preview_blocks
+	content: '+'
+	float: right
+	position: relative
+	right: 24px
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 43px
+	height: 43px

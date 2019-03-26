@@ -1,0 +1,35 @@
+@import '~@/assets/constants.sass'
+
+.sidebar
+	@extend %flex__column_center
+	padding-left: 50px
+	box-shadow: 9px 0 31px 0 rgba(0, 0, 0, 0.06)
+	height: 100%
+	background:
+			color: $whiteColor
+
+	&__title
+		margin-bottom: 50px
+
+	&__title_text
+		padding-bottom: 10px
+		text-transform: uppercase
+		border:
+			bottom: solid 1px $accentColor
+
+	&__menu_items
+		@extend %flex__column_start
+
+	&__menu_item
+		display: inline-block
+		cursor: pointer
+		font-weight: normal
+		margin: 0 0 30px 0
+
+		&--active
+			color: $accentColor !important
+
+		&:hover
+			color: $accentColor
+			transition: color 0.2s ease-out 0.05s
+

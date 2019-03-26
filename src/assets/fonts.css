@@ -1,0 +1,6 @@
+@font-face {
+ font-family: "GothamPro";
+ src: url("./fonts/GothamPro.ttf") format("ttf"),
+        url("./fonts/GothamPro.woff") format("woff"),
+        	url("./fonts/GothamPro.eot") format("eot");
+}

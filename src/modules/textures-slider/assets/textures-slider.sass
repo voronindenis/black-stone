@@ -1,0 +1,140 @@
+@import "~@/assets/constants.sass"
+
+.textures-slider
+  @extend %flex__space_between
+  width: 100%
+
+  &__left_arrow_container
+    @extend %flex__center_center
+    width: 5%
+
+  &__left_arrow
+    width: 6vmin
+    height: 6vmin
+    box-sizing: border-box
+    transform: rotate(-135deg)
+    cursor: pointer
+
+    &::before
+      content: ''
+      width: 100%
+      height: 100%
+      border-width: .4vmin .4vmin 0 0
+      border-style: solid
+      border-color: $blackColor
+      transition: .2s ease
+      display: block
+      transform-origin: 100% 0
+
+    &:after
+      content: ''
+      float: left
+      position: relative
+      top: -100%
+      width: 100%
+      height: 100%
+      border-width: 0 .4vmin 0 0
+      border-style: solid
+      border-color: $blackColor
+      transform-origin: 100% 0
+      transition: .2s ease
+
+
+    &:hover::after
+      transform: rotate(45deg) scale(.8)
+      border-color: $blackColor
+      height: 120%
+      top: -5.7vmin
+
+
+    &:hover::before
+      border-color: $blackColor
+      transform: scale(.8)
+
+    &--disabled:hover::after
+      transform: none
+      border-color: $blackColor
+      height: 100%
+      top: -6vmin
+      cursor: not-allowed
+
+    &--disabled:hover::before
+      border-color: $blackColor
+      transform: none
+      cursor: not-allowed
+
+  &__scroll_area_wrapper
+    overflow: hidden
+    width: 90%
+
+  &__scroll_area
+    display: flex
+    position: relative
+    transition: left 0.2s ease-out 0.05s
+
+  &__image_wrapper
+    min-width: 20%
+    max-width: 20%
+
+  &__image
+    width: 100%
+    padding: 15px
+
+  &__right_arrow_container
+    @extend %flex__center_center
+    width: 5%
+
+  &__right_arrow
+    width: 6vmin
+    height: 6vmin
+    box-sizing: border-box
+    transform: rotate(45deg)
+    cursor: pointer
+
+
+    &::before
+      content: ''
+      width: 100%
+      height: 100%
+      border-width: .4vmin .4vmin 0 0
+      border-style: solid
+      border-color: $blackColor
+      transition: .2s ease
+      display: block
+      transform-origin: 100% 0
+
+    &:after
+      content: ''
+      float: left
+      position: relative
+      top: -100%
+      width: 100%
+      height: 100%
+      border-width: 0 .4vmin 0 0
+      border-style: solid
+      border-color: $blackColor
+      transform-origin: 100% 0
+      transition: .2s ease
+
+
+    &:hover::after
+      transform: rotate(45deg) scale(.8)
+      border-color: $blackColor
+      height: 120%
+      top: -5.7vmin
+
+    &:hover::before
+      border-color: $blackColor
+      transform: scale(.8)
+
+    &--disabled:hover::after
+      transform: none
+      border-color: $blackColor
+      height: 100%
+      top: -6vmin
+      cursor: not-allowed
+
+    &--disabled:hover::before
+      border-color: $blackColor
+      transform: none
+      cursor: not-allowed

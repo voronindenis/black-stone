@@ -1,0 +1,56 @@
+@import "~@/assets/constants.sass"
+
+.price-list-page-content
+  background: linear-gradient(180deg, $mainBgColor 336px, $whiteColor 336px)
+
+  &__row
+
+    &:first-child, &:last-child
+      padding: 90px 0
+
+  &__table_header_row
+    height: 80px
+
+  &__table_body_row
+
+    &--hi-Macs:nth-child(odd)
+      background-color: $greyColorForStripedTable
+
+    &--kerrock:nth-child(even)
+      background-color: $greyColorForStripedTable
+
+    &--corian:nth-child(odd)
+      background-color: $greyColorForStripedTable
+
+    &--staron:nth-child(even)
+      background-color: $greyColorForStripedTable
+
+    &--tristone:nth-child(odd)
+      background-color: $greyColorForStripedTable
+
+    &--hanex:nth-child(even)
+      background-color: $greyColorForStripedTable
+
+    &--montelli:nth-child(odd)
+      background-color: $greyColorForStripedTable
+
+  &__cell_image
+    width: 55%
+
+  &__prices_for_works_title
+    text-transform: uppercase
+
+  &__prices_for_works_description
+    padding: 30px 150px 30px 0
+
+.ui.table.price-list-page-content__table
+  box-shadow: -4px 23px 18px 0 rgba(0, 0, 0, 0.04)
+
+  & tr:nth-child(2) td
+    border-top: none
+
+  &.celled.structured tr td
+    border-right:  1px solid rgba(34,36,38,.06)
+
+  & thead th
+    background-color: $whiteColor

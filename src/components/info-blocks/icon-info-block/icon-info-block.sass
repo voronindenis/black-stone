@@ -1,0 +1,28 @@
+@import '~@/assets/constants.sass'
+
+.icon-info-block
+	@extend %flex__center
+	width: 99.4%
+	padding: 0 0.3% 0 0.3%
+
+	&__icon
+		width: 50px
+		height: 47px
+		background:
+			size: contain
+			repeat: no-repeat
+			position: center center
+
+	&__info
+		padding-left: 10px
+
+	&__title
+		color: $whiteColor
+		text-transform: uppercase
+		margin-bottom: 4px
+
+	&__sub-text
+		color: $greyColor
+
+		& > a
+			color: $greyColor !important
