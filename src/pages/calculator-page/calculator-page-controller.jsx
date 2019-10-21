@@ -1,6 +1,5 @@
 // @flow
 import * as React from 'react';
-import Iframe from 'react-iframe';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { reduxForm, change } from 'redux-form';
@@ -127,37 +126,20 @@ class CalculatorPageControllerComponent extends React.PureComponent<CalculatorPa
     const mainBowls = get(this.props.priceList, ['bowlsPriceList', 'mainBowls']);
     const additionalBowls = get(this.props.priceList, ['bowlsPriceList', 'additionalBowls']);
     const additionalServices = get(this.props.priceList, ['servicesPriceList', 'additionalServices']);
-    const isVisibleReactCalculator = false;
     return (
-      <React.Fragment>
-        {
-          isVisibleReactCalculator && (
-            <CalculatorPage
-              manufacturersOptions={this.getManufacturersOptions(manufacturersPriceList)}
-              seriesOptions={this.getSeriesOptions(manufacturersPriceList, this.props.manufacturer)}
-              isFirstStepCompleted={Boolean(this.props.manufacturer)}
-              isSecondStepCompleted={Boolean(this.props.series)}
-              wallBoardsOptions={this.getWallBoardsOptions(wallBoards)}
-              edgeProcessingOptions={this.getEdgeProcessingOptions(edgeProcessing)}
-              mainBowls={mainBowls}
-              additionalBowls={additionalBowls}
-              isFourStepCompleted={this.checkIsFourStepCompleted()}
-              additionalServices={additionalServices}
-              {...omit(this.props, ['priceList'])}
-            />
-          )
-        }
-        <Iframe
-          url="http://calkulator.vodev.pro/"
-          width="100%"
-          height="4670px"
-          id="oldCalculator"
-          className="oldCalc"
-          display="initial"
-          position="relative"
-          allowFullScreen
-        />
-      </React.Fragment>
+      <CalculatorPage
+        manufacturersOptions={this.getManufacturersOptions(manufacturersPriceList)}
+        seriesOptions={this.getSeriesOptions(manufacturersPriceList, this.props.manufacturer)}
+        isFirstStepCompleted={Boolean(this.props.manufacturer)}
+        isSecondStepCompleted={Boolean(this.props.series)}
+        wallBoardsOptions={this.getWallBoardsOptions(wallBoards)}
+        edgeProcessingOptions={this.getEdgeProcessingOptions(edgeProcessing)}
+        mainBowls={mainBowls}
+        additionalBowls={additionalBowls}
+        isFourStepCompleted={this.checkIsFourStepCompleted()}
+        additionalServices={additionalServices}
+        {...omit(this.props, ['priceList'])}
+      />
     );
   }
 }
