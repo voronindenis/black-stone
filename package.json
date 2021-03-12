@@ -33,7 +33,7 @@
     "moment": "^2.22.2",
     "path-to-regexp": "^2.4.0",
     "react": "^16.4.2",
-    "react-dev-utils": "^6.0.5",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-iframe": "^1.5.0",
     "react-maskedinput": "^4.0.1",
